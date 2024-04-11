@@ -1,0 +1,26 @@
+------- Log Parsing ------------
+Timestamp: [2024-04-06 08:15:32] | Log Level: INFO | Message: System Startup Sequence Initiated
+Timestamp: [2024-04-06 08:15:34] | Log Level: WARN | Message: Deprecated API usage detected: api_v1_backup
+Timestamp: [2024-04-06 08:16:01] | Log Level: ERROR | Message: Unable to initialize network interface: eth0
+Timestamp: [2024-04-06 08:16:01] | Log Level: ERROR | Message: Unable to initialize network interface: eth2
+Timestamp: [2024-04-06 08:16:05] | Log Level: INFO | Message: Network interface initialized successfully: eth1
+Timestamp: [2024-04-06 08:17:42] | Log Level: DEBUG | Message: Process A started with PID: 1234
+Timestamp: [2024-04-06 08:18:03] | Log Level: WARN | Message: Memory usage exceeds threshold: 85%
+Timestamp: [2024-04-06 08:19:10] | Log Level: ERROR | Message: Disk write failure on device: /dev/sda1
+Timestamp: [2024-04-06 08:20:00] | Log Level: INFO | Message: System health check OK
+
+------------ Errors Summary ------------
+Total Errors: 3
+- [2024-04-06 08:16:01] ERROR Unable to initialize network interface: eth0
+- [2024-04-06 08:16:01] ERROR Unable to initialize network interface: eth2
+- [2024-04-06 08:19:10] ERROR Disk write failure on device: /dev/sda1
+------------ Warnings Summary ------------
+Total Warnings: 2
+- [2024-04-06 08:15:34] WARN Deprecated API usage detected: api_v1_backup
+- [2024-04-06 08:18:03] WARN Memory usage exceeds threshold: 85%
+
+----------------- Events Tracking ---------------
+- System Startup Sequence Initiated occurred at [2024-04-06 08:15:32] with Log Level: INFO
+- System health check OK occurred at [2024-04-06 08:20:00] with Log Level: INFO
+- System Startup Sequence Initiated occurred at [2024-04-06 08:15:32] with Log Level: INFO
+- System health check OK occurred at [2024-04-06 08:20:00] with Log Level: INFO
